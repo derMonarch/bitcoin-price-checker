@@ -38,7 +38,8 @@ go build -o btcprices cmd/btcprice.go
 The service exposes a REST API with the route /api/v1/ltp
 
 **Current Handlers**
-Currently there is one handler handling a GET request to /api/v1/ltp
+
+Currently, there is one handler handling a GET request to /api/v1/ltp
 Supported currency pairs are BTC/EUR BTC/CHF BTC/USD
 
 You can either:
@@ -47,6 +48,7 @@ You can either:
 - You can also fetch more pairs selectively with /api/v1/ltp?pairs=BTCEUR&pairs=BTCCHF
 
 **Environment variables**
+
 API_LAST_TRADED_PRICE - Kraken REST API to fetch currency pairs
 
 The environment variable is set in the .env file
